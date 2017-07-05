@@ -1,9 +1,13 @@
 {
   "name": "express-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
+  },
+  "engines": {
+    "node": "~6.10.3",
+    "npm": "~3.10.10"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
