@@ -1,6 +1,3 @@
-/*
-* Created by truong.hv 2017.07.05
-*/
 # express-app
 Created by truong.ha 2017.07.05
 Run:
