@@ -6,10 +6,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
+require('./app_server/models/db');
+
 var index = require('./app_server/index/index');
 var users = require('./app_server/users/users');
 var about = require('./app_server/about/about');
-var location = require('./app_server/location/location');
+var location = require('./app_server/locations/location');
 
 var app = express();
 
@@ -34,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/about', about);
-app.use('/location', location);
+app.use('/locations', location);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,3 +1,5 @@
+const locationModel = require('./location.model');
+
 module.exports = {
   location: function(req, res) { //homeList
     res.render('locations-list', {
